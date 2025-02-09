@@ -51,7 +51,7 @@ const keyPress = e => {
   untyped = untyped.substring(1);
   typedfield.textContent = typed;
   untypedfield.textContent = untyped;
-  typeup.textContent = score++;
+  typeup.textContent = score;
 
   if(untyped === '') {
     createText();
