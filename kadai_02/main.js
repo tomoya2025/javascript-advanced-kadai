@@ -80,10 +80,10 @@ const gameover = id => {
 
   untypedfield.textContent = 'タイムアップ！';
 
-  setTimeouT(() => {
+  setTimeout(() => {
    const result = confirm(rankCheck(score));
 
-  if(result == true) {
+  if(result) {
     window.location.reload();
   }
 }, 10);
